@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+environment/project/de.innot.avreclipse.configuration.app.debug.878657269/AVRDUDEOPTIONS/delimiter=\:
+environment/project/de.innot.avreclipse.configuration.app.debug.878657269/AVRDUDEOPTIONS/operation=replace
+environment/project/de.innot.avreclipse.configuration.app.debug.878657269/AVRDUDEOPTIONS/value=-pt84 -cavrispv2 -P/dev/ttyACM0
+environment/project/de.innot.avreclipse.configuration.app.debug.878657269/AVRTARGETMCU/delimiter=\:
+environment/project/de.innot.avreclipse.configuration.app.debug.878657269/AVRTARGETMCU/operation=replace
+environment/project/de.innot.avreclipse.configuration.app.debug.878657269/AVRTARGETMCU/value=attiny84
+environment/project/de.innot.avreclipse.configuration.app.debug.878657269/append=true
+environment/project/de.innot.avreclipse.configuration.app.debug.878657269/appendContributed=true

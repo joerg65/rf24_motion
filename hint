@@ -1,0 +1,7 @@
+avrdude:
+
+//write first byte in eeprom to ff
+avrdude -pt84 -cavrispv2 -P/dev/ttyACM0 -U eeprom:w:0xff:m
+
+//write flash
+avrdude -pt84 -cavrispv2 -P/dev/ttyACM0 -U flash:w:rf24_window.hex
