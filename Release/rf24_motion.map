@@ -1,0 +1,1231 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_mulhi3.o)
+                              ./aes/bcal-cbc.o (__mulhi3)
+/usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodhi4.o)
+                              ./aes/keysize_descriptor.o (__udivmodhi4)
+/usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+                              ./main.o (__divmodsi4)
+/usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_negsi2.o)
+                              /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o) (__negsi2)
+/usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o (exit)
+/usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+                              ./main.o (__do_copy_data)
+/usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+                              ./main.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_adddi3_s8.o)
+                              ./uart.o (__adddi3_s8)
+/usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodsi4.o)
+                              /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o) (__udivmodsi4)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+                              ./aes/AESLib.o (malloc)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memcpy_P.o)
+                              ./main.o (memcpy_P)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memcpy.o)
+                              ./aes/bcal-basic.o (memcpy)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memset.o)
+                              ./aes/bcal-cmac.o (memset)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(itoa_ncheck.o)
+                              ./uart.o (__itoa_ncheck)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(utoa_ncheck.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(itoa_ncheck.o) (__utoa_common)
+/usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(strrev.o)
+                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(utoa_ncheck.o) (strrev)
+
+Allocating common symbols
+Common symbol       size              file
+
+bit_index           0x1               ./uart.o
+node                0x1               ./main.o
+data_in             0x14              ./main.o
+_tx_buffer          0x1               ./uart.o
+__brkval            0x2               /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+pir_config          0x4               ./main.o
+adc                 0x2               ./main.o
+data_out            0x14              ./main.o
+pir_status          0x5               ./main.o
+__flp               0x2               /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+v_bat               0x8               ./main.o
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+ .text          0x0000000000000000        0x0 ./aes/AESLib.o
+ .data          0x0000000000000000        0x0 ./aes/AESLib.o
+ .bss           0x0000000000000000        0x0 ./aes/AESLib.o
+ .text.aes128_cbc_enc
+                0x0000000000000000       0x84 ./aes/AESLib.o
+ .text.aes192_cbc_enc
+                0x0000000000000000       0x84 ./aes/AESLib.o
+ .text.aes256_enc_single
+                0x0000000000000000       0x46 ./aes/AESLib.o
+ .text.aes128_cbc_enc_start
+                0x0000000000000000       0x54 ./aes/AESLib.o
+ .text.aes192_cbc_enc_start
+                0x0000000000000000       0x54 ./aes/AESLib.o
+ .text.aes128_cbc_enc_continue
+                0x0000000000000000       0x48 ./aes/AESLib.o
+ .text.aes192_cbc_enc_continue
+                0x0000000000000000       0x48 ./aes/AESLib.o
+ .text.aes128_cbc_enc_finish
+                0x0000000000000000       0x10 ./aes/AESLib.o
+ .text.aes192_cbc_enc_finish
+                0x0000000000000000       0x10 ./aes/AESLib.o
+ .text.aes128_cbc_dec
+                0x0000000000000000       0x84 ./aes/AESLib.o
+ .text.aes192_cbc_dec
+                0x0000000000000000       0x84 ./aes/AESLib.o
+ .text.aes128_dec_single
+                0x0000000000000000       0x46 ./aes/AESLib.o
+ .text.aes256_dec_single
+                0x0000000000000000       0x46 ./aes/AESLib.o
+ .text.aes128_cbc_dec_start
+                0x0000000000000000       0x54 ./aes/AESLib.o
+ .text.aes192_cbc_dec_start
+                0x0000000000000000       0x54 ./aes/AESLib.o
+ .text.aes128_cbc_dec_continue
+                0x0000000000000000       0x48 ./aes/AESLib.o
+ .text.aes192_cbc_dec_continue
+                0x0000000000000000       0x48 ./aes/AESLib.o
+ .text.aes128_cbc_dec_finish
+                0x0000000000000000       0x10 ./aes/AESLib.o
+ .text.aes192_cbc_dec_finish
+                0x0000000000000000       0x10 ./aes/AESLib.o
+ .text          0x0000000000000000      0x500 ./aes/aes_dec-asm_faster.o
+ .data          0x0000000000000000        0x0 ./aes/aes_dec-asm_faster.o
+ .bss           0x0000000000000000        0x0 ./aes/aes_dec-asm_faster.o
+ .data          0x0000000000000000        0x0 ./aes/aes_enc-asm.o
+ .bss           0x0000000000000000        0x0 ./aes/aes_enc-asm.o
+ .text          0x0000000000000000      0x100 ./aes/aes_invsbox-asm.o
+ .data          0x0000000000000000        0x0 ./aes/aes_invsbox-asm.o
+ .bss           0x0000000000000000        0x0 ./aes/aes_invsbox-asm.o
+ .data          0x0000000000000000        0x0 ./aes/aes_keyschedule-asm.o
+ .bss           0x0000000000000000        0x0 ./aes/aes_keyschedule-asm.o
+ .data          0x0000000000000000        0x0 ./aes/aes_sbox-asm.o
+ .bss           0x0000000000000000        0x0 ./aes/aes_sbox-asm.o
+ .text          0x0000000000000000        0x0 ./aes/avr-asm-macros.o
+ .data          0x0000000000000000        0x0 ./aes/avr-asm-macros.o
+ .bss           0x0000000000000000        0x0 ./aes/avr-asm-macros.o
+ .text          0x0000000000000000        0x0 ./aes/bcal-basic.o
+ .data          0x0000000000000000        0x0 ./aes/bcal-basic.o
+ .bss           0x0000000000000000        0x0 ./aes/bcal-basic.o
+ .text.bcal_cipher_init
+                0x0000000000000000       0xca ./aes/bcal-basic.o
+ .text.bcal_cipher_free
+                0x0000000000000000       0x32 ./aes/bcal-basic.o
+ .text.bcal_cipher_enc
+                0x0000000000000000       0x1e ./aes/bcal-basic.o
+ .text.bcal_cipher_dec
+                0x0000000000000000       0x1e ./aes/bcal-basic.o
+ .text.bcal_cipher_getBlocksize_b
+                0x0000000000000000        0xa ./aes/bcal-basic.o
+ .text.bcal_cipher_getKeysizeDesc
+                0x0000000000000000        0xa ./aes/bcal-basic.o
+ .comment       0x0000000000000000       0x12 ./aes/bcal-basic.o
+ .text          0x0000000000000000        0x0 ./aes/bcal-cbc.o
+ .data          0x0000000000000000        0x0 ./aes/bcal-cbc.o
+ .bss           0x0000000000000000        0x0 ./aes/bcal-cbc.o
+ .text.bcal_cbc_init
+                0x0000000000000000       0x84 ./aes/bcal-cbc.o
+ .text.bcal_cbc_free
+                0x0000000000000000       0x14 ./aes/bcal-cbc.o
+ .text.bcal_cbc_loadIV
+                0x0000000000000000       0x14 ./aes/bcal-cbc.o
+ .text.bcal_cbc_encNext
+                0x0000000000000000       0x34 ./aes/bcal-cbc.o
+ .text.bcal_cbc_decNext
+                0x0000000000000000       0x8c ./aes/bcal-cbc.o
+ .text.bcal_cbc_decRand
+                0x0000000000000000       0x32 ./aes/bcal-cbc.o
+ .text.bcal_cbc_encMsg
+                0x0000000000000000       0x5c ./aes/bcal-cbc.o
+ .text.bcal_cbc_decMsg
+                0x0000000000000000       0x6a ./aes/bcal-cbc.o
+ .comment       0x0000000000000000       0x12 ./aes/bcal-cbc.o
+ .text          0x0000000000000000        0x0 ./aes/bcal-cmac.o
+ .data          0x0000000000000000        0x0 ./aes/bcal-cmac.o
+ .bss           0x0000000000000000        0x0 ./aes/bcal-cmac.o
+ .text.bcal_cmac_init
+                0x0000000000000000      0x174 ./aes/bcal-cmac.o
+ .text.bcal_cmac_free
+                0x0000000000000000       0x22 ./aes/bcal-cmac.o
+ .text.bcal_cmac_nextBlock
+                0x0000000000000000       0x46 ./aes/bcal-cmac.o
+ .text.bcal_cmac_lastBlock
+                0x0000000000000000       0xf6 ./aes/bcal-cmac.o
+ .text.bcal_cmac_ctx2mac
+                0x0000000000000000       0x86 ./aes/bcal-cmac.o
+ .text.bcal_cmac
+                0x0000000000000000       0x9c ./aes/bcal-cmac.o
+ .comment       0x0000000000000000       0x12 ./aes/bcal-cmac.o
+ .text          0x0000000000000000        0x0 ./aes/bcal-ofb.o
+ .data          0x0000000000000000        0x0 ./aes/bcal-ofb.o
+ .bss           0x0000000000000000        0x0 ./aes/bcal-ofb.o
+ .text.bcal_ofb_init
+                0x0000000000000000       0x84 ./aes/bcal-ofb.o
+ .text.bcal_ofb_free
+                0x0000000000000000       0x16 ./aes/bcal-ofb.o
+ .text.bcal_ofb_loadIV
+                0x0000000000000000       0x14 ./aes/bcal-ofb.o
+ .text.bcal_ofb_encNext
+                0x0000000000000000       0x2a ./aes/bcal-ofb.o
+ .text.bcal_ofb_decNext
+                0x0000000000000000       0x2a ./aes/bcal-ofb.o
+ .text.bcal_ofb_encMsg
+                0x0000000000000000      0x110 ./aes/bcal-ofb.o
+ .text.bcal_ofb_decMsg
+                0x0000000000000000        0xc ./aes/bcal-ofb.o
+ .comment       0x0000000000000000       0x12 ./aes/bcal-ofb.o
+ .text          0x0000000000000000        0x0 ./aes/bcal_aes128.o
+ .data          0x0000000000000000        0x0 ./aes/bcal_aes128.o
+ .bss           0x0000000000000000        0x0 ./aes/bcal_aes128.o
+ .progmem.data.aes128_desc
+                0x0000000000000000       0x12 ./aes/bcal_aes128.o
+ .progmem.data.aes128_keysize_desc
+                0x0000000000000000        0x5 ./aes/bcal_aes128.o
+ .progmem.data.aes128_str
+                0x0000000000000000        0x8 ./aes/bcal_aes128.o
+ .comment       0x0000000000000000       0x12 ./aes/bcal_aes128.o
+ .text          0x0000000000000000        0x0 ./aes/bcal_aes192.o
+ .data          0x0000000000000000        0x0 ./aes/bcal_aes192.o
+ .bss           0x0000000000000000        0x0 ./aes/bcal_aes192.o
+ .progmem.data.aes192_desc
+                0x0000000000000000       0x12 ./aes/bcal_aes192.o
+ .progmem.data.aes192_keysize_desc
+                0x0000000000000000        0x5 ./aes/bcal_aes192.o
+ .progmem.data.aes192_str
+                0x0000000000000000        0x8 ./aes/bcal_aes192.o
+ .comment       0x0000000000000000       0x12 ./aes/bcal_aes192.o
+ .text          0x0000000000000000        0x0 ./aes/bcal_aes256.o
+ .data          0x0000000000000000        0x0 ./aes/bcal_aes256.o
+ .bss           0x0000000000000000        0x0 ./aes/bcal_aes256.o
+ .progmem.data.aes256_desc
+                0x0000000000000000       0x12 ./aes/bcal_aes256.o
+ .progmem.data.aes256_keysize_desc
+                0x0000000000000000        0x5 ./aes/bcal_aes256.o
+ .progmem.data.aes256_str
+                0x0000000000000000        0x8 ./aes/bcal_aes256.o
+ .comment       0x0000000000000000       0x12 ./aes/bcal_aes256.o
+ .text          0x0000000000000000       0x1a ./aes/gf256mul.o
+ .data          0x0000000000000000        0x0 ./aes/gf256mul.o
+ .bss           0x0000000000000000        0x0 ./aes/gf256mul.o
+ .text          0x0000000000000000        0x0 ./aes/keysize_descriptor.o
+ .data          0x0000000000000000        0x0 ./aes/keysize_descriptor.o
+ .bss           0x0000000000000000        0x0 ./aes/keysize_descriptor.o
+ .text.is_valid_keysize_P
+                0x0000000000000000       0xb8 ./aes/keysize_descriptor.o
+ .text.get_keysize
+                0x0000000000000000       0x14 ./aes/keysize_descriptor.o
+ .text.get_keysizes
+                0x0000000000000000      0x1a8 ./aes/keysize_descriptor.o
+ .comment       0x0000000000000000       0x12 ./aes/keysize_descriptor.o
+ .text          0x0000000000000000       0x18 ./aes/memxor.o
+ .data          0x0000000000000000        0x0 ./aes/memxor.o
+ .bss           0x0000000000000000        0x0 ./aes/memxor.o
+ .text          0x0000000000000000        0x0 ./main.o
+ .data          0x0000000000000000        0x0 ./main.o
+ .bss           0x0000000000000000        0x0 ./main.o
+ .text.printConfig
+                0x0000000000000000        0x2 ./main.o
+ .text          0x0000000000000000        0x0 ./mirf.o
+ .data          0x0000000000000000        0x0 ./mirf.o
+ .bss           0x0000000000000000        0x0 ./mirf.o
+ .text.mirf_data_ready
+                0x0000000000000000       0x10 ./mirf.o
+ .text.mirf_max_rt_reached
+                0x0000000000000000       0x10 ./mirf.o
+ .text.mirf_get_data
+                0x0000000000000000       0x1e ./mirf.o
+ .text.mirf_read_register
+                0x0000000000000000       0x2e ./mirf.o
+ .text.mirf_reconfig_rx
+                0x0000000000000000       0x2a ./mirf.o
+ .text          0x0000000000000000        0x0 ./spi.o
+ .data          0x0000000000000000        0x0 ./spi.o
+ .bss           0x0000000000000000        0x0 ./spi.o
+ .text          0x0000000000000000        0x0 ./uart.o
+ .data          0x0000000000000000        0x0 ./uart.o
+ .bss           0x0000000000000000        0x0 ./uart.o
+ .text.serial_write
+                0x0000000000000000       0x18 ./uart.o
+ .text.serial_print
+                0x0000000000000000       0x24 ./uart.o
+ .text.serial_print_int
+                0x0000000000000000       0x36 ./uart.o
+ .text.serial_print_dec
+                0x0000000000000000       0x36 ./uart.o
+ .text.millis   0x0000000000000000       0x26 ./uart.o
+ .text.uart_init
+                0x0000000000000000       0x1e ./uart.o
+ .bss.old_millis
+                0x0000000000000000        0x8 ./uart.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_mulhi3.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_mulhi3.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_mulhi3.o)
+ .text.libgcc.mul
+                0x0000000000000000       0x22 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_mulhi3.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_mulhi3.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_mulhi3.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_mulhi3.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_mulhi3.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_mulhi3.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_mulhi3.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_negsi2.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_negsi2.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_negsi2.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_negsi2.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_negsi2.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_negsi2.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_negsi2.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_negsi2.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_negsi2.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_adddi3_s8.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_adddi3_s8.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_adddi3_s8.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_adddi3_s8.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+ .data          0x0000000000000000        0x6 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+ .text.avr-libc
+                0x0000000000000000      0x25a /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+ COMMON         0x0000000000000000        0x4 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memcpy_P.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memcpy_P.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memcpy_P.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memcpy.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memcpy.o)
+ .text.avr-libc
+                0x0000000000000000       0x12 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memcpy.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memset.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memset.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memset.o)
+ .text.avr-libc
+                0x0000000000000000        0xe /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memset.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(itoa_ncheck.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(itoa_ncheck.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(itoa_ncheck.o)
+ .text.avr-libc
+                0x0000000000000000       0x14 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(itoa_ncheck.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(utoa_ncheck.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(utoa_ncheck.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(utoa_ncheck.o)
+ .text.avr-libc
+                0x0000000000000000       0x32 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(utoa_ncheck.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(strrev.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(strrev.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(strrev.o)
+ .text.avr-libc
+                0x0000000000000000       0x20 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(strrev.o)
+
+↵
+Speichereinrichtung
+↵
+
+Name             Ursprung           Länge             Eigenschaften
+text             0x0000000000000000 0x0000000000002000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+LOAD ./aes/AESLib.o
+LOAD ./aes/aes_dec-asm_faster.o
+LOAD ./aes/aes_enc-asm.o
+LOAD ./aes/aes_invsbox-asm.o
+LOAD ./aes/aes_keyschedule-asm.o
+LOAD ./aes/aes_sbox-asm.o
+LOAD ./aes/avr-asm-macros.o
+LOAD ./aes/bcal-basic.o
+LOAD ./aes/bcal-cbc.o
+LOAD ./aes/bcal-cmac.o
+LOAD ./aes/bcal-ofb.o
+LOAD ./aes/bcal_aes128.o
+LOAD ./aes/bcal_aes192.o
+LOAD ./aes/bcal_aes256.o
+LOAD ./aes/gf256mul.o
+LOAD ./aes/keysize_descriptor.o
+LOAD ./aes/memxor.o
+LOAD ./main.o
+LOAD ./mirf.o
+LOAD ./spi.o
+LOAD ./uart.o
+LOAD /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libm.a
+START GROUP
+LOAD /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libm.a
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a
+LOAD /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libattiny84.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0xe44
+ *(.vectors)
+ .vectors       0x0000000000000000       0x22 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x0000000000000022                . = ALIGN (0x2)
+                0x0000000000000022                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000022        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000022                __trampolines_end = .
+ *(.progmem*)
+ *fill*         0x0000000000000022       0x1e 
+ .progmem.data.config
+                0x0000000000000040       0x40 ./main.o
+                0x0000000000000040                config
+                0x0000000000000080                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000080                __ctors_start = .
+ *(.ctors)
+                0x0000000000000080                __ctors_end = .
+                0x0000000000000080                __dtors_start = .
+ *(.dtors)
+                0x0000000000000080                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000080        0x0 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+                0x0000000000000080                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000080        0xc /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000000000008c       0x16 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+                0x000000000000008c                __do_copy_data
+ .init4         0x00000000000000a2       0x10 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+                0x00000000000000a2                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000000b2        0x4 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000000b6        0x2 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+                0x00000000000000b6                __vector_1
+                0x00000000000000b6                __vector_12
+                0x00000000000000b6                __bad_interrupt
+                0x00000000000000b6                __vector_6
+                0x00000000000000b6                __vector_3
+                0x00000000000000b6                __vector_11
+                0x00000000000000b6                __vector_13
+                0x00000000000000b6                __vector_7
+                0x00000000000000b6                __vector_5
+                0x00000000000000b6                __vector_15
+                0x00000000000000b6                __vector_8
+                0x00000000000000b6                __vector_14
+                0x00000000000000b6                __vector_10
+                0x00000000000000b6                __vector_16
+ .text          0x00000000000000b8      0x226 ./aes/aes_enc-asm.o
+                0x00000000000000b8                aes256_enc
+                0x00000000000000bc                aes192_enc
+                0x00000000000000c0                aes128_enc
+                0x00000000000000c2                aes_encrypt_core
+ .text          0x00000000000002de       0xee ./aes/aes_keyschedule-asm.o
+                0x00000000000002de                aes256_init
+                0x00000000000002e6                aes192_init
+                0x00000000000002ee                aes128_init
+                0x00000000000002f4                aes_init
+ *fill*         0x00000000000003cc       0x34 
+ .text          0x0000000000000400      0x100 ./aes/aes_sbox-asm.o
+                0x0000000000000400                aes_sbox
+                0x0000000000000500                . = ALIGN (0x2)
+ *(.text.*)
+ .text.aes128_enc_single
+                0x0000000000000500       0x46 ./aes/AESLib.o
+                0x0000000000000500                aes128_enc_single
+ .text._crc_xmodem_update
+                0x0000000000000546       0x34 ./main.o
+ .text.__vector_2
+                0x000000000000057a       0x2a ./main.o
+                0x000000000000057a                __vector_2
+ .text.__vector_4
+                0x00000000000005a4       0x28 ./main.o
+                0x00000000000005a4                __vector_4
+ .text.resetWatchdog
+                0x00000000000005cc        0xe ./main.o
+                0x00000000000005cc                resetWatchdog
+ .text.adc_init
+                0x00000000000005da        0xc ./main.o
+                0x00000000000005da                adc_init
+ .text.goToSleep
+                0x00000000000005e6       0x20 ./main.o
+                0x00000000000005e6                goToSleep
+ .text.init_data_out
+                0x0000000000000606       0x1c ./main.o
+                0x0000000000000606                init_data_out
+ .text.readConfig
+                0x0000000000000622       0x74 ./main.o
+                0x0000000000000622                readConfig
+ .text.ack_int  0x0000000000000696        0xa ./main.o
+                0x0000000000000696                ack_int
+ .text.writeConfig
+                0x00000000000006a0       0x56 ./main.o
+                0x00000000000006a0                writeConfig
+ .text.setup    0x00000000000006f6       0x86 ./main.o
+                0x00000000000006f6                setup
+ .text.startup.main
+                0x000000000000077c      0x2c4 ./main.o
+                0x000000000000077c                main
+ .text.mirf_init
+                0x0000000000000a40        0xa ./mirf.o
+                0x0000000000000a40                mirf_init
+ .text.mirf_status
+                0x0000000000000a4a        0xe ./mirf.o
+                0x0000000000000a4a                mirf_status
+ .text.mirf_config_register
+                0x0000000000000a58       0x24 ./mirf.o
+                0x0000000000000a58                mirf_config_register
+ .text.mirf_write_register
+                0x0000000000000a7c       0x30 ./mirf.o
+                0x0000000000000a7c                mirf_write_register
+ .text.mirf_config
+                0x0000000000000aac       0x42 ./mirf.o
+                0x0000000000000aac                mirf_config
+ .text.mirf_reconfig_tx
+                0x0000000000000aee       0x2a ./mirf.o
+                0x0000000000000aee                mirf_reconfig_tx
+ .text.mirf_transmit_data
+                0x0000000000000b18       0x7c ./mirf.o
+                0x0000000000000b18                mirf_transmit_data
+ .text.mirf_receive_data
+                0x0000000000000b94       0x54 ./mirf.o
+                0x0000000000000b94                mirf_receive_data
+ .text.spi_transfer
+                0x0000000000000be8       0x14 ./spi.o
+                0x0000000000000be8                spi_transfer
+ .text.spi_write_data
+                0x0000000000000bfc       0x38 ./spi.o
+                0x0000000000000bfc                spi_write_data
+ .text.spi_read_data
+                0x0000000000000c34       0x3a ./spi.o
+                0x0000000000000c34                spi_read_data
+ .text.spi_init
+                0x0000000000000c6e        0xa ./spi.o
+                0x0000000000000c6e                spi_init
+ .text.__vector_9
+                0x0000000000000c78       0xfa ./uart.o
+                0x0000000000000c78                __vector_9
+ .text.libgcc.div
+                0x0000000000000d72       0x28 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodhi4.o)
+                0x0000000000000d72                __udivmodhi4
+ .text.libgcc.div
+                0x0000000000000d9a       0x28 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+                0x0000000000000d9a                __divmodsi4
+ .text.libgcc.div
+                0x0000000000000dc2       0x10 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_negsi2.o)
+                0x0000000000000dc2                __negsi2
+ .text.libgcc   0x0000000000000dd2       0x18 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_adddi3_s8.o)
+                0x0000000000000dd2                __adddi3_s8
+ .text.libgcc.div
+                0x0000000000000dea       0x44 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodsi4.o)
+                0x0000000000000dea                __udivmodsi4
+ .text.avr-libc
+                0x0000000000000e2e       0x12 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memcpy_P.o)
+                0x0000000000000e2e                memcpy_P
+                0x0000000000000e40                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000000e40        0x0 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+                0x0000000000000e40                exit
+                0x0000000000000e40                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000000e40        0x4 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000000e44                _etext = .
+
+.bootloader     0x0000000000000e44       0x9a
+ .bootloader    0x0000000000000e44       0x9a ./main.o
+                0x0000000000000e44                boot_program_page
+
+.data           0x0000000000800060       0x32 load address 0x0000000000000ede
+                0x0000000000800060                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ .data.aes_data
+                0x0000000000800060       0x20 ./main.o
+                0x0000000000800060                aes_data
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x0000000000800080       0x12 ./mirf.o
+ *(.gnu.linkonce.d*)
+                0x0000000000800092                . = ALIGN (0x2)
+                0x0000000000800092                _edata = .
+                0x0000000000800092                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800092       0x4b
+                0x0000000000800092                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.resetFunc
+                0x0000000000800092        0x2 ./main.o
+                0x0000000000800092                resetFunc
+ .bss.tx_buzy   0x0000000000800094        0x1 ./uart.o
+                0x0000000000800094                tx_buzy
+ .bss._1000us   0x0000000000800095        0x2 ./uart.o
+                0x0000000000800095                _1000us
+ .bss._millis   0x0000000000800097        0x8 ./uart.o
+                0x0000000000800097                _millis
+ *(COMMON)
+ COMMON         0x000000000080009f       0x3c ./main.o
+                0x000000000080009f                node
+                0x00000000008000a0                data_in
+                0x00000000008000b4                pir_config
+                0x00000000008000b8                adc
+                0x00000000008000ba                data_out
+                0x00000000008000ce                pir_status
+                0x00000000008000d3                v_bat
+ COMMON         0x00000000008000db        0x2 ./uart.o
+                0x00000000008000db                bit_index
+                0x00000000008000dc                _tx_buffer
+                0x00000000008000dd                PROVIDE (__bss_end, .)
+                0x0000000000000ede                __data_load_start = LOADADDR (.data)
+                0x0000000000000f10                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008000dd        0x0
+                0x00000000008000dd                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00000000008000dd                PROVIDE (__noinit_end, .)
+                0x00000000008000dd                _end = .
+                0x00000000008000dd                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 ./aes/AESLib.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000011       0x12 ./main.o
+ .comment       0x0000000000000011       0x12 ./mirf.o
+ .comment       0x0000000000000011       0x12 ./spi.o
+ .comment       0x0000000000000011       0x12 ./uart.o
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(rf24_motion.elf elf32-avr)
+LOAD linker stubs
+
+Kreuzreferenz-Tabelle
+
+Symbol                                            Datei
+_1000us                                           ./uart.o
+__adddi3_s8                                       /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_adddi3_s8.o)
+                                                  ./uart.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__brkval                                          /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+__bss_end                                         /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+__divmodsi4                                       /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+                                                  ./main.o
+__do_clear_bss                                    /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_clear_bss.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+                                                  ./uart.o
+                                                  ./mirf.o
+                                                  ./main.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_copy_data.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+                                                  ./mirf.o
+                                                  ./main.o
+__flp                                             /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+__heap_end                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+__heap_start                                      /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+__init                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__itoa_ncheck                                     /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(itoa_ncheck.o)
+                                                  ./uart.o
+__malloc_heap_end                                 /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+__malloc_heap_start                               /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+__malloc_margin                                   /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+__mulhi3                                          /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_mulhi3.o)
+                                                  ./aes/bcal-cbc.o
+__negsi2                                          /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_negsi2.o)
+                                                  /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+__stack                                           /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__udivmodhi4                                      /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodhi4.o)
+                                                  ./main.o
+                                                  ./aes/keysize_descriptor.o
+__udivmodsi4                                      /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_udivmodsi4.o)
+                                                  /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_divmodsi4.o)
+__utoa_common                                     /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(utoa_ncheck.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(itoa_ncheck.o)
+__utoa_ncheck                                     /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(utoa_ncheck.o)
+__vector_1                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_10                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_11                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_12                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_13                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_14                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_15                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_16                                       /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_2                                        ./main.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_3                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_4                                        ./main.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_5                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_6                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_7                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_8                                        /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_9                                        ./uart.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vector_default                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+__vectors                                         /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+_exit                                             /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+_millis                                           ./uart.o
+_tx_buffer                                        ./uart.o
+ack_int                                           ./main.o
+adc                                               ./main.o
+adc_init                                          ./main.o
+aes128_cbc_dec                                    ./aes/AESLib.o
+aes128_cbc_dec_continue                           ./aes/AESLib.o
+aes128_cbc_dec_finish                             ./aes/AESLib.o
+aes128_cbc_dec_start                              ./aes/AESLib.o
+aes128_cbc_enc                                    ./aes/AESLib.o
+aes128_cbc_enc_continue                           ./aes/AESLib.o
+aes128_cbc_enc_finish                             ./aes/AESLib.o
+aes128_cbc_enc_start                              ./aes/AESLib.o
+aes128_dec                                        ./aes/aes_dec-asm_faster.o
+                                                  ./aes/bcal_aes128.o
+                                                  ./aes/AESLib.o
+aes128_dec_single                                 ./aes/AESLib.o
+aes128_desc                                       ./aes/bcal_aes128.o
+                                                  ./aes/AESLib.o
+aes128_enc                                        ./aes/aes_enc-asm.o
+                                                  ./aes/bcal_aes128.o
+                                                  ./aes/AESLib.o
+aes128_enc_single                                 ./aes/AESLib.o
+                                                  ./main.o
+aes128_init                                       ./aes/aes_keyschedule-asm.o
+                                                  ./aes/bcal_aes128.o
+                                                  ./aes/AESLib.o
+aes128_keysize_desc                               ./aes/bcal_aes128.o
+aes128_str                                        ./aes/bcal_aes128.o
+aes192_cbc_dec                                    ./aes/AESLib.o
+aes192_cbc_dec_continue                           ./aes/AESLib.o
+aes192_cbc_dec_finish                             ./aes/AESLib.o
+aes192_cbc_dec_start                              ./aes/AESLib.o
+aes192_cbc_enc                                    ./aes/AESLib.o
+aes192_cbc_enc_continue                           ./aes/AESLib.o
+aes192_cbc_enc_finish                             ./aes/AESLib.o
+aes192_cbc_enc_start                              ./aes/AESLib.o
+aes192_dec                                        ./aes/aes_dec-asm_faster.o
+                                                  ./aes/bcal_aes192.o
+aes192_desc                                       ./aes/bcal_aes192.o
+                                                  ./aes/AESLib.o
+aes192_enc                                        ./aes/aes_enc-asm.o
+                                                  ./aes/bcal_aes192.o
+aes192_init                                       ./aes/aes_keyschedule-asm.o
+                                                  ./aes/bcal_aes192.o
+aes192_keysize_desc                               ./aes/bcal_aes192.o
+aes192_str                                        ./aes/bcal_aes192.o
+aes256_dec                                        ./aes/aes_dec-asm_faster.o
+                                                  ./aes/bcal_aes256.o
+                                                  ./aes/AESLib.o
+aes256_dec_single                                 ./aes/AESLib.o
+aes256_desc                                       ./aes/bcal_aes256.o
+aes256_enc                                        ./aes/aes_enc-asm.o
+                                                  ./aes/bcal_aes256.o
+                                                  ./aes/AESLib.o
+aes256_enc_single                                 ./aes/AESLib.o
+aes256_init                                       ./aes/aes_keyschedule-asm.o
+                                                  ./aes/bcal_aes256.o
+                                                  ./aes/AESLib.o
+aes256_keysize_desc                               ./aes/bcal_aes256.o
+aes256_str                                        ./aes/bcal_aes256.o
+aes_data                                          ./main.o
+aes_decrypt_core                                  ./aes/aes_dec-asm_faster.o
+aes_encrypt_core                                  ./aes/aes_enc-asm.o
+aes_init                                          ./aes/aes_keyschedule-asm.o
+aes_invsbox                                       ./aes/aes_invsbox-asm.o
+                                                  ./aes/aes_dec-asm_faster.o
+aes_sbox                                          ./aes/aes_sbox-asm.o
+                                                  ./aes/aes_keyschedule-asm.o
+                                                  ./aes/aes_enc-asm.o
+bcal_cbc_decMsg                                   ./aes/bcal-cbc.o
+                                                  ./aes/AESLib.o
+bcal_cbc_decNext                                  ./aes/bcal-cbc.o
+                                                  ./aes/AESLib.o
+bcal_cbc_decRand                                  ./aes/bcal-cbc.o
+bcal_cbc_encMsg                                   ./aes/bcal-cbc.o
+                                                  ./aes/AESLib.o
+bcal_cbc_encNext                                  ./aes/bcal-cbc.o
+                                                  ./aes/AESLib.o
+bcal_cbc_free                                     ./aes/bcal-cbc.o
+                                                  ./aes/AESLib.o
+bcal_cbc_init                                     ./aes/bcal-cbc.o
+                                                  ./aes/AESLib.o
+bcal_cbc_loadIV                                   ./aes/bcal-cbc.o
+                                                  ./aes/AESLib.o
+bcal_cipher_dec                                   ./aes/bcal-basic.o
+                                                  ./aes/bcal-cbc.o
+bcal_cipher_enc                                   ./aes/bcal-basic.o
+                                                  ./aes/bcal-ofb.o
+                                                  ./aes/bcal-cmac.o
+                                                  ./aes/bcal-cbc.o
+bcal_cipher_free                                  ./aes/bcal-basic.o
+                                                  ./aes/bcal-ofb.o
+                                                  ./aes/bcal-cmac.o
+                                                  ./aes/bcal-cbc.o
+bcal_cipher_getBlocksize_b                        ./aes/bcal-basic.o
+                                                  ./aes/bcal-ofb.o
+                                                  ./aes/bcal-cmac.o
+                                                  ./aes/bcal-cbc.o
+bcal_cipher_getKeysizeDesc                        ./aes/bcal-basic.o
+bcal_cipher_init                                  ./aes/bcal-basic.o
+                                                  ./aes/bcal-ofb.o
+                                                  ./aes/bcal-cmac.o
+                                                  ./aes/bcal-cbc.o
+bcal_cmac                                         ./aes/bcal-cmac.o
+bcal_cmac_ctx2mac                                 ./aes/bcal-cmac.o
+bcal_cmac_free                                    ./aes/bcal-cmac.o
+bcal_cmac_init                                    ./aes/bcal-cmac.o
+bcal_cmac_lastBlock                               ./aes/bcal-cmac.o
+bcal_cmac_nextBlock                               ./aes/bcal-cmac.o
+bcal_ofb_decMsg                                   ./aes/bcal-ofb.o
+bcal_ofb_decNext                                  ./aes/bcal-ofb.o
+bcal_ofb_encMsg                                   ./aes/bcal-ofb.o
+bcal_ofb_encNext                                  ./aes/bcal-ofb.o
+bcal_ofb_free                                     ./aes/bcal-ofb.o
+bcal_ofb_init                                     ./aes/bcal-ofb.o
+bcal_ofb_loadIV                                   ./aes/bcal-ofb.o
+bit_index                                         ./uart.o
+boot_program_page                                 ./main.o
+config                                            ./main.o
+data_in                                           ./mirf.o
+                                                  ./main.o
+data_out                                          ./mirf.o
+                                                  ./main.o
+exit                                              /usr/lib/gcc/avr/4.9.2/avr25/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+free                                              /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+                                                  ./aes/bcal-ofb.o
+                                                  ./aes/bcal-cmac.o
+                                                  ./aes/bcal-cbc.o
+                                                  ./aes/bcal-basic.o
+                                                  ./aes/AESLib.o
+get_keysize                                       ./aes/keysize_descriptor.o
+get_keysizes                                      ./aes/keysize_descriptor.o
+gf256mul                                          ./aes/gf256mul.o
+goToSleep                                         ./main.o
+init_data_out                                     ./main.o
+is_valid_keysize_P                                ./aes/keysize_descriptor.o
+                                                  ./aes/bcal-basic.o
+main                                              ./main.o
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/crtattiny84.o
+malloc                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(malloc.o)
+                                                  ./aes/keysize_descriptor.o
+                                                  ./aes/bcal-ofb.o
+                                                  ./aes/bcal-cmac.o
+                                                  ./aes/bcal-cbc.o
+                                                  ./aes/bcal-basic.o
+                                                  ./aes/AESLib.o
+memcpy                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memcpy.o)
+                                                  ./aes/bcal-ofb.o
+                                                  ./aes/bcal-cmac.o
+                                                  ./aes/bcal-cbc.o
+                                                  ./aes/bcal-basic.o
+memcpy_P                                          /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memcpy_P.o)
+                                                  ./main.o
+memset                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(memset.o)
+                                                  ./aes/bcal-cmac.o
+memxor                                            ./aes/memxor.o
+                                                  ./aes/bcal-ofb.o
+                                                  ./aes/bcal-cmac.o
+                                                  ./aes/bcal-cbc.o
+millis                                            ./uart.o
+mirf_config                                       ./mirf.o
+                                                  ./main.o
+mirf_config_register                              ./mirf.o
+                                                  ./main.o
+mirf_data_ready                                   ./mirf.o
+mirf_get_data                                     ./mirf.o
+mirf_init                                         ./mirf.o
+                                                  ./main.o
+mirf_max_rt_reached                               ./mirf.o
+mirf_read_register                                ./mirf.o
+mirf_receive_data                                 ./mirf.o
+                                                  ./main.o
+mirf_reconfig_rx                                  ./mirf.o
+mirf_reconfig_tx                                  ./mirf.o
+                                                  ./main.o
+mirf_status                                       ./mirf.o
+                                                  ./main.o
+mirf_transmit_data                                ./mirf.o
+                                                  ./main.o
+mirf_write_register                               ./mirf.o
+node                                              ./main.o
+old_millis                                        ./uart.o
+pir_config                                        ./main.o
+pir_status                                        ./main.o
+printConfig                                       ./main.o
+readConfig                                        ./main.o
+resetFunc                                         ./main.o
+resetWatchdog                                     ./main.o
+serial_print                                      ./uart.o
+serial_print_dec                                  ./uart.o
+serial_print_int                                  ./uart.o
+serial_write                                      ./uart.o
+setup                                             ./main.o
+spi_init                                          ./spi.o
+                                                  ./main.o
+spi_read_data                                     ./spi.o
+                                                  ./mirf.o
+spi_transfer                                      ./spi.o
+                                                  ./mirf.o
+                                                  ./main.o
+spi_write_data                                    ./spi.o
+                                                  ./mirf.o
+strrev                                            /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(strrev.o)
+                                                  /usr/lib/gcc/avr/4.9.2/../../../avr/lib/avr25/libc.a(utoa_ncheck.o)
+tx_buzy                                           ./uart.o
+uart_init                                         ./uart.o
+v_bat                                             ./main.o
+writeConfig                                       ./main.o
