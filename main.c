@@ -40,6 +40,7 @@
 #ifdef SERIAL_DEBUG
 #include "uart.h"
 #endif
+
 #define WITH_AES 1
 #ifdef WITH_AES
 #include <AESLib.h>
@@ -199,11 +200,6 @@ void resetWatchdog (void)
 
 void setup (void)
 {
-#ifdef SERIAL_DEBUG
-	uart_init();
-
-	serial_print("rf24_motion based on mirf\r\n");
-#endif
 
 	// Copy of 32 bytes flash data to aes_data
 	memcpy_P(aes_data.data, config, 32);
@@ -282,7 +278,9 @@ void init_data_out(void)
 	data_out.as_struct.type = TYPE_SENSOR;
 	data_out.as_struct.info = node;
 	data_out.as_struct.closed = 0;
+	data_out.as_struct.error = 0;
 }
+
 
 // Flashing a page
 void boot_program_page (uint16_t address, uint8_t *buf)
@@ -449,9 +447,19 @@ int main (void)
 {
 	int cnt1, cnt2;
 
+	unsigned char ResetSrc = MCUSR;   // save reset source
+	MCUSR = 0x00;  // cleared for next reset detection
+
 	setup();
 
 #ifdef SERIAL_DEBUG
+	uart_init();
+
+	serial_print("rf24_motion based on mirf\r\n");
+#endif
+
+#ifdef SERIAL_DEBUG
+	int j;
 	serial_print("node: ");
 	serial_print_int(node);
 	serial_print("\n\r");
@@ -499,12 +507,19 @@ int main (void)
 
 		while (data_out.as_struct.node == 0xff)
 		{
-			//If the sensor was configured before, exit after 5 loops
-			//During this time central can send new configuration
-			//If field data_out.as_struct.info is not equal 0xff, the sensor was configured before
-			//and has the node here
+			//Leave if it was a soft reset
+			if (ResetSrc == 0) {
+				//WD_WDP = (1<<WDP2) | (1<<WDP0); // 0.5s
+				//WD_cnt = 10;
+				data_out.as_struct.node = node;
+				break;
+			}
+			//If was configured before, exit after 5 loops
 			if (data_out.as_struct.info != 0xff) {
 				if (cnt2 > 4) {
+					//WD_WDP = (1<<WDP2) | (1<<WDP0); // 0.5s
+					//WD_cnt = 10;
+					data_out.as_struct.node = node;
 					break;
 				}
 			}
@@ -517,17 +532,15 @@ int main (void)
 
 	    	// Power up the nRF24L01
 	    	TX_POWERUP;
-	    	_delay_ms(2);
-
-	    	// send the plain data
-	    	mirf_transmit_data();
-
-	    	POWERDOWN;
 	    	_delay_ms(3);
 
+	    	// Send the plain data
+	    	mirf_transmit_data();
+
 	    	// Change to listening mode
-			RX_POWERUP;
-			_delay_ms(3);
+
+	    	mirf_reconfig_rx();
+
 			mirf_CSN_lo;
 			spi_transfer(FLUSH_RX);
 			mirf_CSN_hi;
@@ -540,23 +553,32 @@ int main (void)
 				cnt1++;
 				if (cnt1 > 100) {
 					mirf_CE_lo; // Stop listening
+#ifdef SERIAL_DEBUG
+					serial_print("Timeout...\n\r");
+#endif
 					break; //break after 50ms
 				}
 			}
-
+#ifdef SERIAL_DEBUG
+			if (cnt1 < 100) serial_print("Data received ...\n\r");
+#endif
 			if (cnt1 > 100) {
 				_delay_ms(100);
 				cnt2++;
 				continue;
 			}
+
 			mirf_CE_lo; // Stop listening
 
+#ifdef SERIAL_DEBUG
+			serial_print("Read the data received ...\n\r");
+#endif
 			// Read the data received
 			mirf_receive_data();
 
 			if ((data_in.as_struct.node > 0) & (data_in.as_struct.node < 255)) {
 				node = data_in.as_struct.node;
-				mirf_reconfig_tx();
+
 
 #ifdef SERIAL_DEBUG
 				serial_print("got node: ");
@@ -577,7 +599,8 @@ int main (void)
 				serial_print("\r\n");
 #endif
 
-				// Calculate CRC16 and save to data.out structure pos 17:18
+
+				// Calculate CRC16 and save to dat structure pos 17:18
 				data_out.as_crc.crc[0] = node;
 				for (cnt1 = 0; cnt1 < 16; cnt1++) {
 					data_out.as_crc.crc[cnt1 + 1] = data_in.as_struct.key[cnt1];
@@ -588,18 +611,35 @@ int main (void)
 
 				// Check the CRC to avoid false init messages
 				if (crc != data_in.as_struct.crc) {
+
 #ifdef SERIAL_DEBUG
 					serial_print("Bad CRC, make a restart ...\r\n");
 					_delay_ms(20);
 #endif
+
+					// Failed, set CRC error (1)
+					init_data_out();
+					data_out.as_struct.node = 0xff;
+					data_out.as_struct.info = node;
+					data_out.as_struct.error = 1;
+
+			    	// Power up the nRF24L01
+			    	TX_POWERUP;
+			    	_delay_ms(3);
+
+			    	// send the plain data
+			    	mirf_transmit_data();
+
+
 					// Do a soft reset
+					mirf_config();
+					//TX_POWERUP;
 					resetFunc();
 				}
 
 				// Recreate data_out structure
 				init_data_out();
 
-				//If we are here, we take the received aes key and save it to flash
 				memcpy( aes_data.as_struct.key, data_in.as_struct.key, 16);
 
 				aes_data.data[16] = data_out.as_data.data[0];
@@ -619,7 +659,24 @@ int main (void)
 				// Flash the received node and AES key and CRC
 				boot_program_page((uint16_t)config, aes_data.data);
 
-				// Restart with the new configuration
+				// Success, send acknowledge (99)
+				init_data_out();
+				data_out.as_struct.node = 0xff;
+				data_out.as_struct.info = node;
+				data_out.as_struct.error = 99;
+
+		    	// Power up the nRF24L01
+		    	TX_POWERUP;
+		    	_delay_ms(3);
+
+		    	// send the plain data
+		    	mirf_transmit_data();
+
+
+				// Do a soft reset
+				// mirf_config();
+				_delay_ms(3);
+
 				resetFunc();
 			}
 		}
@@ -689,9 +746,18 @@ int main (void)
     	memcpy( data_out.as_data.data, aes_data.as_struct.buffer, 16);
 #endif
 
+    	// If it is traffic on the air, do a loop
+    	// without transmitting data
+		RX_POWERUP;
+		_delay_ms(3);
+		if (mirf_is_traffic()) {
+			_delay_ms(1);
+			continue;
+		}
+
     	// Power up the nRF24L01
     	TX_POWERUP;
-    	_delay_ms(3);
+    	//_delay_ms(3);
 
     	// Send the encrypted payload
     	mirf_transmit_data();

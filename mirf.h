@@ -50,7 +50,8 @@ typedef struct {
 	uint8_t closed;
 	uint8_t info;
 	uint16_t crc;
-	uint8_t dummy[12];
+	uint8_t error;
+	uint8_t dummy[11];
 }payload_as_struct;
 
 typedef struct {
@@ -93,9 +94,9 @@ extern data_payload_init data_in;
 #define POWERDOWN mirf_config_register(CONFIG, mirf_CONFIG | ( (0<<PWR_UP) ) )
 
 // Mirf settings
-#define mirf_CH			5
+#define mirf_CH			25
 
-#define mirf_CONFIG		( (1<<EN_CRC) | (0<<CRCO) )
+#define mirf_CONFIG		( (1<<EN_CRC) | (1<<CRCO) )
 #define RADDR				(byte *)"mirf1"
 #define TADDR				(byte *)"mirf2"
 #define RADDR2				(byte *)"mirf3"
@@ -117,6 +118,7 @@ extern void mirf_reconfig_rx(void);
 extern void mirf_reconfig_tx(void);
 extern uint8_t mirf_status(void);
 extern uint8_t mirf_data_ready(void);
+extern uint8_t mirf_is_traffic(void);
 extern uint8_t mirf_max_rt_reached(void);
 extern uint8_t mirf_transmit_data(void);
 extern uint8_t mirf_receive_data(void);
